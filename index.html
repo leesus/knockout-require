@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Knockout & Require.js App</title>
+	</head>
+	<body>
+    <div id="container" style="width:980px;margin:0 auto;overflow:hidden">
+  		<h1>Knockout & Require App</h1>
+  		<p>Just a test</p>
+      <div id="add-contact" style="width:50%;float:left;">
+        <h2>Add a contact</h2>
+        <form data-bind="submit: saveContact">
+          <div><label>Name:<br/><input type="text" data-bind="value: name"></label></div>
+          <div><label>Number:<br/><input type="text" data-bind="value: number"></label></div>
+          <div><input type="submit" value="Add contact"></div>
+        </form>
+      </div>
+      <div id="contacts-list" style="width:50%;float:left;">
+        <h2>Contacts</h2>
+        <ul class="people" data-bind="visible: contacts().length, foreach: contacts">
+          <li><strong data-bind="text: name"></strong> - <span data-bind="text: number"></span></li>
+        </ul>
+      </div>
+    </div>
+    <script src="scripts/components/requirejs/require.js" data-main="scripts/app"></script>
+	</body>
+</html>
