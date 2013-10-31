@@ -9,6 +9,7 @@
   		<p>Just a test</p>
       <div id="add-contact" style="width:50%;float:left;">
         <h2>Add a contact</h2>
+        <div style="color: red" data-bind="text: validation"></div>
         <form data-bind="submit: saveContact">
           <div><label>Name:<br/><input type="text" data-bind="value: name"></label></div>
           <div><label>Number:<br/><input type="text" data-bind="value: number"></label></div>

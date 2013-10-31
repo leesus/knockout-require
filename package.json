@@ -1,0 +1,9 @@
+{
+  "name": "Knockout Require",
+  "version": "0.0.1",
+  "devDependencies":{
+    "requirejs": "latest",
+    "mocha": "latest",
+    "chai": "latest"
+  }
+}
